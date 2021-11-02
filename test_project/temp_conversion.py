@@ -15,10 +15,12 @@ def convert_temp(scale=None, source_temp=None):
     else:
         raise TypeError("Only F or C are allowed!")
 
-print("-------- Temperature Conversion Program --------")
-scale = input("Enter (F) or (C): " )
-source_temp = float(input("Enter temperature: " ))
-# Calls the function and prints the output
-a = convert_temp(scale, source_temp)
-print(str(round(source_temp,1)) + " degrees " + scale.upper() + " is " + str(round(a[1],1)) + " degrees " + a[0])
-print("------------------------------------------------")
+
+if __name__ == "__main__":
+    print("-------- Temperature Conversion Program --------")
+    scale = input("Enter (F) or (C): " )
+    source_temp = float(input("Enter temperature: " ))
+    # Calls the function and prints the output
+    a = convert_temp(scale, source_temp)
+    print(str(round(source_temp,1)) + " degrees " + scale.upper() + " is " + str(round(a[1],1)) + " degrees " + a[0])
+    print("------------------------------------------------")

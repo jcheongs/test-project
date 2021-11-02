@@ -2,6 +2,7 @@
 
 # Add imports here
 from .test_project import *
+from .temp_conversion import *
 
 # Handle versioneer
 from ._version import get_versions
